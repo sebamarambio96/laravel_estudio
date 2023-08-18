@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Servicios</h1>
-</body>
-</html>
+@extends('layouts.landing')
+
+@section('title','Services')
+@section('content')
+
+    <h1>Services</h1>
+    @component('_components.card')
+        @slot('title', 'Service 1')
+        @slot('content', 'Lorem ipsum dolor set aimet.')
+    @endcomponent
+@endsection
